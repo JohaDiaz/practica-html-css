@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+@media print {
+
+header.header, .footer, .banner {
+    display: none;
+    }
+}
