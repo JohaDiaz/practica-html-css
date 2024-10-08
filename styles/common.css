@@ -1,5 +1,5 @@
 :root{
-    --bg-color: #fcd4d2;
+    --bg-color: #f9dedd;
     --main-brand-color: #f88e8e;
     --main-brand-color-dark: #e82a2a;
     --main-text-color: #1f1f1f;
@@ -8,10 +8,16 @@
 }
 
 * {
+   
     box-sizing: border-box;
     font-family: var(--main-font-family);
 }
 
+.sides-margin{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 768px;
+}
 
 @media print {
 
