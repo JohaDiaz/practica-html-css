@@ -23,7 +23,26 @@
       }
     }
   }
+ /*
+  .text-loader{
+    content:"";
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--main-brand-color-dark);
+    animation-name: textloader;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
 
+  @keyframes textloader{
+    0%{content: "L";}
+    10%{content: "LO";}
+    20%{content: "LOA";}
+    30%{content: "LOAD";}
+    100%{content: "LOADER";}
+
+  }
+ */
   .galery-bg{
     background: var(--bg-color);
   }
