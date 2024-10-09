@@ -1,0 +1,113 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeflix signin</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/signin.css">
+</head>
+<body class="main-bg container">
+  <main class="card">
+    <h1>HABLEMOS</h1>
+    <form method="post" novalidate>
+      <div class="form__element">
+        <label for="mail">Email</label>
+        <input
+          class="input"
+          type="email"
+          id="mail"
+          placeholder="Pon tu correo"
+          name="correo"
+          value="test@test.com"
+          autocomplete="off"
+          readonly
+          required
+        >
+      </div>
+      <div class="form__element">
+        <label for="password">Password</label>
+        <input class="input" required type="password" id="password" name="pwd">
+      </div>
+      <div class="form__element">
+        <label for="tel">Enter your phone number</label>
+        <input
+          class="input"
+          required
+          type="tel"
+          id="tel"
+          name="phone"
+          autocomplete="off"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="Format (123-123-1234)"
+        >
+      </div>
+      <div class="form__element">
+        <label class="btn secondary" for="file">Choose a profile picture</label>
+        <input class="pointer" required type="file" id="file" name="profile" accept="image/png">
+      </div>
+      <fieldset class="form__element">
+        <legend>¿De dónde nos conocemos?</legend>
+        <div>
+          <div><input required type="radio" id="docu" name="lugar" value="Keepcoding" checked>
+          <label for="docu">Keepcoding Kick-of</label>
+          </div>
+          <div>
+          <input required type="radio" id="universidad" name="lugar" value="universidad">
+          <label for="universidad">Universidad</label>
+          </div>
+          <input required type="radio" id="colegio" name="lugar" value="colegio">
+          <label for="universidad">Colegio</label>
+          <input required type="radio" id="Github" name="lugar" value="Github">
+          <label for="Github">Github</label>
+        </div>
+      </fieldset>
+      <!--
+      <fieldset>
+        <legend>Fav programming lang</legend>
+        <label for="js">js</label>
+        <input type="checkbox" name="favlang" id="js" value="js">
+        <label for="python">python</label>
+        <input type="checkbox" name="favlang" id="python" value="python">
+        <label for="c">C#</label>
+        <input type="checkbox" name="favlang" id="c" value="c#">
+      </fieldset>
+      -->
+      <div class="form__element">
+        <label for="bio">Más información</label>
+        <textarea class="input" required name="userbio" id="bio" rows="10" maxlength="250"></textarea>
+      </div>
+      <div class="form__element">
+        <div>
+          <input type="checkbox" name="remember" id="remember">
+          <label class="pointer" for="remember">Quiero acceso al newsletter</label>
+        </div>
+      </div>
+      <!--
+        <div class="form__element">
+          <button class="btn" type="button">More info</button>
+        </div>
+      -->
+      <div class="form__element">
+        <label for="country">Country</label>
+        <select class="input" required name="country" id="country">
+          <option value="ES">Spain</option>
+          <option value="CO">Colombia</option>
+          <option value="US">Usa</option>
+        </select>
+      </div>
+      <!--
+      <div>
+        <input type="number" required placeholder="number example" min="0" max="100" step="10">
+      </div>
+      -->
+      <div class="form__actions">
+        <button class="btn secondary" type="reset">Reset</button>
+        <button class="btn" type="submit">Register</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
