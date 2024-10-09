@@ -6,7 +6,7 @@
     /*         1rem -> 16px */
     /*         1em  -> 16px */
     font-size: 1rem;
-    background: var(--main-brand-color);
+    background: var(--main-brand-color-dark);
   }
   
   @media screen and (width > 768px) {
