@@ -1,37 +1,56 @@
 
 .wrapper{
-    padding: 20px 20px;
-    width: 70vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
     margin: auto;
-   
-    
+    min-width: 50%;
+    p {
+        margin-right: 10px;
+        font-weight:bold ;
+    } 
+}
+.margin-bottom{
+    margin-bottom: 0.8em;
 }
 
+.space-between{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .progress-bar{
     width: 100%;
-    height: 5px;
+    height: 8px;
     border-radius:50px;
     overflow: hidden;
-    border-bottom: 2px solid var(--bg-color);
+    border-bottom: 3px solid var(--bg-color);
+    margin-bottom: 0;
    
 }
 .progress{
     width: 0px;
     height: 100%;
     background-color: var(--main-brand-color);
-    border-radius: 10px;
-    animation: animate 1s linear forwards;
+    border-radius: 10px; 
+}
+.bar-one{
+    animation: bar-one 2s linear forwards;
+}
+.bar-two{
+    animation: bar-two 2s linear forwards;
 }
 
-@keyframes animate{
+@keyframes bar-one{
     0%{
         width:0%;
     }
     100%{
         width:70%;
+    }
+}
+@keyframes bar-two{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:30%;
     }
 }
