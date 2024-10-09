@@ -1,14 +1,23 @@
 
 .wrapper{
-    margin: auto;
     min-width: 50%;
+    width: 100%;
+    max-width: 400px;
+    margin: 2em auto;
     p {
         margin-right: 10px;
         font-weight:bold ;
     } 
+    span{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
 }
 .margin-bottom{
     margin-bottom: 0.8em;
+}
+.margin-top{
+    margin-top: 1em;
 }
 
 .space-between{
@@ -32,25 +41,106 @@
     border-radius: 10px; 
 }
 .bar-one{
-    animation: bar-one 2s linear forwards;
+    animation: bar-one 1.8s linear forwards;
 }
 .bar-two{
-    animation: bar-two 2s linear forwards;
+    animation: bar-two 1.8s linear forwards;
 }
-
+.bar-three{
+    animation: bar-three 1.8s linear forwards;
+}
+.bar-four{
+    animation: bar-four 1.8s linear forwards;
+}
+.bar-five{
+    animation: bar-five 1.8s linear forwards;
+}
+.bar-six{
+    animation: bar-six 1.8s linear forwards;
+}
+.bar-seven{
+    animation: bar-seven 1.8s linear forwards;
+}
+.bar-eight{
+    animation: bar-eight 1.8s linear forwards;
+}
 @keyframes bar-one{
     0%{
         width:0%;
+        opacity:0.1;
     }
     100%{
-        width:70%;
+        width:100%;
+        opacity:1;
     }
 }
 @keyframes bar-two{
     0%{
         width:0%;
+        opacity:0.1;
+    }
+    100%{
+        width:100%;
+        opacity:1;
+    }
+}
+@keyframes bar-three{
+    0%{
+        width:0%;
+        opacity:0.1;
+    }
+    100%{
+        width:90%;
+        opacity:1;
+    }
+}
+@keyframes bar-four{
+    0%{
+        width:0%;
+        opacity:0.1;
+    }
+    100%{
+        width:100%;
+        opacity:1;
+    }
+}
+@keyframes bar-five{
+    0%{
+        width:0%;
+        opacity:0.1;
+    }
+    100%{
+        width:80%;
+        opacity:1;
+    }
+}
+@keyframes bar-six{
+    0%{
+        width:0%;
+        opacity:0.1;
+    }
+    100%{
+        width:70%;
+        opacity:1;
+    }
+}
+@keyframes bar-seven{
+    0%{
+        width:0%;
+        opacity:0.1;
+    }
+    100%{
+        width:50%;
+        opacity:1;
+    }
+}
+@keyframes bar-eight{
+    0%{
+        width:0%;
+        opacity:0.1;
     }
     100%{
         width:30%;
+        opacity:1;
     }
 }
