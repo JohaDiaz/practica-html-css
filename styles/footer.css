@@ -2,7 +2,7 @@
     text-align: center;
     font-weight: 100;
     font-style: italic;
-    padding: 2em 0;
+    padding: 1em 0;
     /*         1rem -> 16px */
     /*         1em  -> 16px */
     font-size: 1rem;
@@ -11,7 +11,7 @@
   
   @media screen and (width > 768px) {
     .footer {
-      background:  var(--main-brand-color);
+      background:  var(--main-brand-color-dark);
     }
   }
   

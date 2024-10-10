@@ -1,5 +1,5 @@
 .banner {
-    height: 75vh;
+    height: 50vh;
     align-content: center;
     position: relative;
     .bold {
@@ -11,19 +11,34 @@
       position: relative;
     }
     .image {
-      background-image: url('../assets/catalog.jpg');
-      /*
-      background-repeat: repeat-x;
-      background-repeat: no-repeat;
+      background-image: url('../assets/banner-portfolio-johanna-diaz-768x768-2.jpg');
       background-size: cover;
+      background-repeat: no-repeat;
       background-position: center;
-      */
       position: absolute;
+      z-index: -1;
       left: 0;
       top: 0;
       right: 0;
       bottom: 0;
-      opacity: 0.3;
+      opacity: 0.8;
     }
   }
   
+@media (width > 425px) {
+  .banner{
+    height: 75vh;
+    .image{
+      background-image: url('../assets/banner-portfolio-johanna-diaz-1366x768-2.jpg');
+    }
+  }
+}
+
+@media (width > 1024px) {
+  .banner{
+    height: 75vh;
+    .image{
+      background-image: url('../assets/banner-portfolio-johanna-diaz-1920x1080.jpg');
+    }
+  }
+}

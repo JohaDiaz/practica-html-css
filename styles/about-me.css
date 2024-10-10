@@ -1,9 +1,16 @@
 .info {
     margin: 0 auto; 
     margin-bottom: 20px;
-
+    .assets {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      video {
+        position: absolute;
+        z-index: 1;
+      }
+    }
   }
-
 
 @media screen and (width > 768px) {
     .info {
