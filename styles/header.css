@@ -13,13 +13,45 @@
       min-width: 200px;
       max-width: 250px;
     }
+
     .nav {
-      .list {
+      ul {
+        width: 300px;
+        width: 100%;
         list-style: none;
-        padding: 0;
-        margin: 0;
         display: flex;
-        gap: 10px;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        li{
+          font-size: 0.8rem;
+          padding: 5px;
+          a{
+            position: relative;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 10;
+            color: var(--main-brand-color);
+            letter-spacing: 0.5px;
+            padding: 0 10px;
+          }
+          a:after{
+            content:"";
+            position: absolute;
+            background-color: #fff;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.4s ease-in-out;
+          }
+          a:hover:after{
+            width: 100%;
+          }
+          a:hover{
+            color: white;
+          }
+        }
       }
     }
   }
