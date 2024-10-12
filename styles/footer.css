@@ -3,8 +3,12 @@ footer{
     padding: 15px 10px;
     background-color: #fff;
 }
-.box__footer .logo img{
-    width: 80px;
+.logo-footer{
+  margin: 0;
+  width: 100%;
+  min-height: 20px;
+  background: url(../assets/johanna-diaz-red.png) center center no-repeat;
+  background-size: contain;
 }
 .container__footer{
   display: flex;
@@ -46,5 +50,10 @@ opacity: 0.8;
 @media screen and (width > 768px) {
   .footer {
     background:  var(--main-brand-color-dark);
+  }
+  .logo-footer{
+    background: url(../assets/johanna-diaz-rose.png) center center no-repeat;
+    background-size: contain;
+    min-height: 30px;
   }
 }
