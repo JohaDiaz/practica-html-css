@@ -13,6 +13,10 @@
     }
   }
   strong{
+    color: var(--main-brand-color-dark);
+  }
+  .color-brand{
+    font-size: 0.8rem;
     color: var(--main-brand-color);
   }
   h2{
