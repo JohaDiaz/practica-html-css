@@ -10,29 +10,29 @@ footer{
   background: url(../assets/johanna-diaz-red.png) center center no-repeat;
   background-size: contain;
 }
-.container__footer{
+.container-footer{
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: auto;
 }
-.box__footer{
+.box-footer{
   padding: 10px;
   width: 80%;
   max-width: 768px;
 }
-.box__footer a{
+.box-footer a{
 margin-top: 10px;
 color: var(--main-text-color);
 font-weight: 600;
 }
-.box__footer a:hover{
+.box-footer a:hover{
 opacity: 0.8;
 }
-.box__footer a .fab{
+.box-footer a .fab{
     font-size: 20px;
 }
-.box__copyright{
+.box-copyright{
     max-width: 1200px;
     margin: auto;
     text-align: center;
@@ -42,10 +42,11 @@ opacity: 0.8;
     }
     hr{
       border: none;
-    height: 1px;
-    background-color: var(--main-text-color);
+      height: 1px;
+      width: 90%;
+      background-color: var(--main-text-color);
     }
-}
+  }
 
 @media screen and (width > 768px) {
   .footer {
@@ -56,4 +57,10 @@ opacity: 0.8;
     background-size: contain;
     min-height: 30px;
   }
+  .box-copyright{
+      hr{
+        background-color: var(--bg-color);
+    }
+  }
 }
+
