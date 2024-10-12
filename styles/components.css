@@ -40,8 +40,7 @@
   .input {
     padding: 1rem;
     border-radius: 5px;
-    border: none;
-    background: var(--input-bg-color);
+    border: 2px solid var(--input-bg-color);
     color: var(--main-text-color);
   }
   input[type="file"] {
