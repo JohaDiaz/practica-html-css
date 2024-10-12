@@ -4,11 +4,15 @@
     position: relative;
     .bold {
       font-weight: 700;
+      padding-top: 0;
     }
     .content {
       text-align: center;
       z-index: 1;
       position: relative;
+      h1{
+        line-height: 1em;
+      }
     }
     .image {
       background-image: url('../assets/banner-portfolio-johanna-diaz-768x768-2.jpg');

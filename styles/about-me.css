@@ -1,6 +1,9 @@
 .info {
     margin: 0 auto; 
     margin-bottom: 20px;
+    strong{
+      color: var(--main-brand-color);
+    }
     .assets {
       position: relative;
       display: flex;
