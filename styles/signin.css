@@ -1,12 +1,32 @@
 .container {
-  background-image: url('../assets/banner-portfolio-johanna-diaz-1366x768.jpg');
+  background-image: url('../assets/bg-contacto.jpg');
+  background-size: contain;
 }
 
 .card {
-  background-color: var(--main-brand-color);
-  border-radius: 4px;
   width: 100%;
   max-width: 420px;
-  margin: 2em auto;
-  padding: 3rem 2rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: var(--main-brand-color) solid;
+}
+.titulo{
+  margin: 1.2rem auto;
+  font-family: 'Mango';
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+@media screen and (width > 768px) {
+  .titulo{
+    margin: 0.6em 0 0 0;
+    padding: 0;
+    font-size: 4rem;
+  }
+  .card{
+    padding: 2rem 2rem;
+    margin: 2em auto;
+  }
 }

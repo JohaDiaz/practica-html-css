@@ -8,31 +8,32 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem;
-    .image {
+    img {
       width: 30%;
       min-width: 100px;
       max-width: 200px;
     }
-    .nav {
-      ul {
-        min-width: 300px;
-        width: 100%;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: auto;
-        li{
-          font-size: 0.8rem;
-          padding: 5px;
-          a{
-            position: relative;
-            text-decoration: none;
-            font-weight: bold;
-            z-index: 10;
-            color: var(--main-brand-color);
-            letter-spacing: 0.5px;
-            padding: 0 10px;
+    }
+.nav {
+  ul {
+      min-width: 300px;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: auto;
+      li{
+        font-size: 0.8rem;
+        padding: 5px;
+        a{
+          position: relative;
+          text-decoration: none;
+          font-weight: bold;
+          z-index: 10;
+          color: var(--main-brand-color);
+          letter-spacing: 0.5px;
+          padding: 0 10px;
           }
           a:after{
             content:"";
@@ -51,10 +52,9 @@
             color: white;
           }
         }
-      }
     }
-  }
-  
+}
+
 .hidden {
     display: none;
 }

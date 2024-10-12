@@ -1,66 +1,53 @@
 footer{
     width: 100%;
-    padding: 15px 10px;
+    padding: 5px 10px;
     background-color: #fff;
 }
-.logo-footer{
-  margin: 0;
-  width: 100%;
-  min-height: 20px;
-  background: url(../assets/johanna-diaz-red.png) center center no-repeat;
-  background-size: contain;
-}
 .container-footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin: auto;
 }
 .box-footer{
-  padding: 10px;
-  width: 80%;
-  max-width: 768px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
 }
-.box-footer a{
-margin-top: 10px;
-color: var(--main-text-color);
-font-weight: 600;
-}
-.box-footer a:hover{
-opacity: 0.8;
-}
-.box-footer a .fab{
-    font-size: 20px;
+.box-footer a img{
+    width: 25px;
 }
 .box-copyright{
-    max-width: 1200px;
-    margin: auto;
     text-align: center;
+    font-size: 0.8rem;
     p{
       margin-top: 10px;
       color: var(--main-text-color);
     }
-    hr{
-      border: none;
-      height: 1px;
-      width: 90%;
-      background-color: var(--main-text-color);
-    }
   }
+.redes-sociales{
+  a{
+    padding: 0 10px;
+  }
+}
 
 @media screen and (width > 768px) {
   .footer {
     background:  var(--main-brand-color-dark);
+    p{
+      color: var(--main-brand-color);
+    }
   }
-  .logo-footer{
-    background: url(../assets/johanna-diaz-rose.png) center center no-repeat;
-    background-size: contain;
-    min-height: 30px;
+  .box-footer a img{
+    width: 30px;
+ }
+ .redes-sociales{
+  a{
+    padding: 10px;
+  }
+  }
+  .box-footer a img{
+    filter: invert(95%) sepia(12%) saturate(1304%) hue-rotate(297deg) brightness(100%) contrast(98%);
   }
   .box-copyright{
-      hr{
-        background-color: var(--bg-color);
-    }
+    font-size: 1rem;
   }
 }
 

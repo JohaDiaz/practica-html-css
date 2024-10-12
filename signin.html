@@ -19,13 +19,11 @@
   <link rel="stylesheet" href="styles/info.css">
   <link rel="stylesheet" href="styles/video.css">
 </head>
-<body class="main-bg container">
+<body class="container">
   <header class="header">
-    <div class="logo">
         <a href="index.html">
-            <img class="image" src="./assets/johanna-diaz.png" alt="Codeflix brand">
+            <img class="image" src="./assets/johanna-diaz.png" alt="Logo Johanna Diaz">
         </a>
-    </div>
     <nav class="nav hidden">
         <ul class="list">
             <li><a href="index.html">HOME</a></li>
@@ -35,113 +33,110 @@
         </ul>
     </nav>
 </header>
-  <main class="card">
-    <h1>¿Quieres conversar?</h1>
-    <form method="post" novalidate>
-      <div class="form__element">
-        <label for="nombre">Nombre</label>
-          <input
-            class="input"
-            type="text"
-            id="nombre"
-            name="nombre"
-            required
-            aria-required="true"
-            placeholder="Escribe tu nombre"
-          />
-      </div>
-      <div class="form__element">
-        <label for="apellido">Apellido</label>
-          <input
-            class="input"
-            type="text"
-            id="apellido"
-            name="apellido"
-            required
-            aria-required="true"
-            placeholder="Escribe tu(s) apellido(s)"
-          />
-      </div>
-      <div class="form__element">
-        <label for="tel">Teléfono</label>
-        <input
-          class="input"
-          required
-          type="tel"
-          id="tel"
-          name="phone"
-          autocomplete="off"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          title="Format (123-123-1234)"
-          placeholder="Escribe tu número de teléfono"
-        >
-      </div>
-      <div class="form__element">
-        <label for="github-user">Usuario de Github</label>
-        <input
-          class="input"
-          type="text"
-          id="github-user"
-          name="github-user"
-          required
-          pattern="^@[^\s]+"
-          title="@ Los Username de Github deben empezar con @"
-          placeholder="Escribe tu usuario de Github"
-        />
-      </div>
-      <fieldset class="form__element">
-        <legend>¿De dónde nos conocemos?</legend>
-        <div>
-          <div><input required type="radio" id="docu" name="lugar" value="Keepcoding" checked>
-          <label for="docu">Keepcoding Kick-of</label>
+  <main>
+    <h2 class="titulo">Contáctame</h2>
+        <div class="card">
+        <form method="post" novalidate>
+          <div class="form_element">
+            <label for="nombre">Nombre</label>
+              <input
+                class="input"
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                aria-required="true"
+                placeholder="Escribe tu nombre"
+              />
           </div>
-          <div>
-          <input required type="radio" id="universidad" name="lugar" value="universidad">
-          <label for="universidad">Universidad</label>
+          <div class="form_element">
+            <label for="apellido">Apellido</label>
+              <input
+                class="input"
+                type="text"
+                id="apellido"
+                name="apellido"
+                required
+                aria-required="true"
+                placeholder="Escribe tu(s) apellido(s)"
+              />
           </div>
-          <input required type="radio" id="colegio" name="lugar" value="colegio">
-          <label for="universidad">Colegio</label>
-          <input required type="radio" id="Github" name="lugar" value="Github">
-          <label for="Github">Github</label>
-        </div>
-      </fieldset>
-      <div class="form__element">
-        <label for="bio">Más información</label>
-        <textarea class="input" required name="userbio" id="bio" rows="6" maxlength="180"></textarea>
-      </div>
-      <div class="form__element">
-        <div>
-          <input type="checkbox" name="remember" id="remember">
-          <label class="pointer" for="remember">Quiero acceso al newsletter</label>
-        </div>
-      </div>
+          <div class="form_element">
+            <label for="tel">Teléfono</label>
+            <input
+              class="input"
+              required
+              type="tel"
+              id="tel"
+              name="phone"
+              autocomplete="off"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              title="Format (123-123-1234)"
+              placeholder="Escribe tu número de teléfono"
+            >
+          </div>
+          <div class="form_element">
+            <label for="github-user">Usuario de Github</label>
+            <input
+              class="input"
+              type="text"
+              id="github-user"
+              name="github-user"
+              required
+              pattern="^@[^\s]+"
+              title="@ Los Username de Github deben empezar con @"
+              placeholder="Escribe tu usuario de Github"
+            />
+          </div>
+          <fieldset class="form_element">
+            <legend>¿De dónde nos conocemos?</legend>
+            <div>
+              <div><input required type="radio" id="docu" name="lugar" value="Keepcoding" checked>
+              <label for="docu">Keepcoding Kick-of</label>
+              </div>
+              <div>
+              <input required type="radio" id="universidad" name="lugar" value="universidad">
+              <label for="universidad">Universidad</label>
+              </div>
+              <input required type="radio" id="colegio" name="lugar" value="colegio">
+              <label for="universidad">Colegio</label>
+              <input required type="radio" id="Github" name="lugar" value="Github">
+              <label for="Github">Github</label>
+            </div>
+          </fieldset>
+          <div class="form_element">
+            <label for="bio">Más información</label>
+            <textarea class="input" required name="userbio" id="bio" rows="6" maxlength="180"></textarea>
+          </div>
+          <div class="form_element">
+            <div>
+              <input type="checkbox" name="remember" id="remember">
+              <label class="pointer" for="remember">Quiero acceso al newsletter</label>
+            </div>
+          </div>
 
-      <!--
-      <div>
-        <input type="number" required placeholder="number example" min="0" max="100" step="10">
+          <!--
+          <div>
+            <input type="number" required placeholder="number example" min="0" max="100" step="10">
+          </div>
+          -->
+          <div class="form__actions">
+            <button class="btn secondary" type="reset">Reset</button>
+            <button class="btn" type="submit">Register</button>
+          </div>
+        </form>
       </div>
-      -->
-      <div class="form__actions">
-        <button class="btn secondary" type="reset">Reset</button>
-        <button class="btn" type="submit">Register</button>
-      </div>
-    </form>
   </main>
   <footer class="footer">
     <div class="container-footer">
-            <div class="box-footer">
-                <div class="logo-footer">
-                </div>
+        <div class="box-footer">
+            <div class="redes-sociales">
+                <a href="#"><img src="/assets/github.png" alt="github Johanna Diaz"></a>
+                <a href="#"><img src="/assets/linkedin-logo.png" alt="linkedin Johanna Diaz"></a>   
             </div>
-            <div class="box-footer">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="box-footer">
-                <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </div>
+        </div>
     </div>
     <div class="box-copyright">
-        <hr>
         <p>Todos los derechos reservados © 2024 <b>Johanna&nbsp;Diaz</b></p>
     </div>
 </footer>
