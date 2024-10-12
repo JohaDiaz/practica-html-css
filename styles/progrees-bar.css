@@ -3,7 +3,7 @@
     min-width: 50%;
     width: 100%;
     max-width: 400px;
-    margin: 2em auto;
+    margin: 2.5em auto;
     p {
         margin-right: 10px;
         font-weight:bold ;
@@ -16,8 +16,8 @@
 .margin-progress-bar{
     margin: 1em 0;
 }
-.margin-top{
-    margin-top: 1em;
+.margin-bottom{
+    margin-bottom: 2em;
 }
 
 .space-between{

@@ -1,9 +1,6 @@
 .info {
     margin: 0 auto; 
     margin-bottom: 20px;
-    strong{
-      color: var(--main-brand-color);
-    }
     .assets {
       position: relative;
       display: flex;
@@ -12,7 +9,14 @@
         position: absolute;
         z-index: 1;
       }
+
     }
+  }
+  strong{
+    color: var(--main-brand-color);
+  }
+  h2{
+    line-height: 1.2em;
   }
 
 @media screen and (width > 768px) {
