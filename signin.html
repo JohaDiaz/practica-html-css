@@ -36,7 +36,7 @@
   <main>
     <h2 class="titulo">Contáctame</h2>
         <div class="card">
-        <form method="post" novalidate>
+        <form method="post" action="">
           <div class="form_element">
             <label for="nombre">Nombre</label>
               <input
@@ -70,8 +70,8 @@
               id="tel"
               name="phone"
               autocomplete="off"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              title="Format (123-123-1234)"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              title="Formato (123-123-123)"
               placeholder="Escribe tu número de teléfono"
             >
           </div>
@@ -88,22 +88,28 @@
               placeholder="Escribe tu usuario de Github"
             />
           </div>
-          <fieldset class="form_element">
+          <div>
+            <fieldset class="form_element fieldset">
             <legend>¿De dónde nos conocemos?</legend>
             <div>
               <div><input required type="radio" id="docu" name="lugar" value="Keepcoding" checked>
-              <label for="docu">Keepcoding Kick-of</label>
+              <label for="docu">Keepcoding Kick-off</label>
               </div>
               <div>
               <input required type="radio" id="universidad" name="lugar" value="universidad">
               <label for="universidad">Universidad</label>
               </div>
+              <div>
               <input required type="radio" id="colegio" name="lugar" value="colegio">
               <label for="universidad">Colegio</label>
+              </div>
+              <div>
               <input required type="radio" id="Github" name="lugar" value="Github">
               <label for="Github">Github</label>
+              </div>
             </div>
           </fieldset>
+          </div>
           <div class="form_element">
             <label for="bio">Más información</label>
             <textarea class="input" required name="userbio" id="bio" rows="6" maxlength="180"></textarea>
@@ -114,15 +120,9 @@
               <label class="pointer" for="remember">Quiero acceso al newsletter</label>
             </div>
           </div>
-
-          <!--
-          <div>
-            <input type="number" required placeholder="number example" min="0" max="100" step="10">
-          </div>
-          -->
-          <div class="form__actions">
-            <button class="btn secondary" type="reset">Reset</button>
-            <button class="btn" type="submit">Register</button>
+          <div class="buttons">
+            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="reset">Reset</button>
           </div>
         </form>
       </div>
@@ -131,8 +131,8 @@
     <div class="container-footer">
         <div class="box-footer">
             <div class="redes-sociales">
-                <a href="#"><img src="/assets/github.png" alt="github Johanna Diaz"></a>
-                <a href="#"><img src="/assets/linkedin-logo.png" alt="linkedin Johanna Diaz"></a>   
+                <a href="https://github.com/JohaDiaz" target="_blank"><img src="/assets/github.png" alt="github Johanna Diaz"></a>
+                <a href="https://www.linkedin.com/in/johanna-carolina-diaz-araque/" target="_blank"><img src="/assets/linkedin-logo.png" alt="linkedin Johanna Diaz"></a>   
             </div>
         </div>
     </div>

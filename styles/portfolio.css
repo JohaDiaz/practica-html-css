@@ -29,6 +29,13 @@
     background: var(--bg-color);
   }
 
+  .h2-portfolio{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+  
+
 
   @media screen and (width > 425) {
     .galery .list {
