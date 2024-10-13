@@ -38,24 +38,23 @@
 .toggle-menu{
     display: block;
 }
-.list input:checked ~ .hamburger{
+.list-hamburger input:checked ~ .hamburger{
     background: transparent;
 
 } 
-.list input:checked ~ .hamburger:before{
+.list-hamburger input:checked ~ .hamburger:before{
     top: 0;
     transform: rotate(-45deg);
     width: 30px;
 }
-.list input:checked ~ .hamburger:after{
+.list-hamburger input:checked ~ .hamburger:after{
     top: 0;
     transform: rotate(45deg);
     width: 30px;
 }
 
-@media screen and (width > 768) {
+@media screen and (width > 768px) {
     .hamburger,.toggle-menu{
     display: none;
-}
-
+    }
 }
