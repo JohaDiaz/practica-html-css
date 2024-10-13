@@ -14,7 +14,9 @@
         max-width: 200px;
       }
     }
+
 .nav {
+  display: none;
   ul {
       min-width: 300px;
       width: 100%;
@@ -55,9 +57,7 @@
     }
 }
 
-.hidden {
-    display: none;
-}
+
   /* @media screen and (min-width: 768px) { */
 @media screen and (width > 768px) {
     .hidden {
