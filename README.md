@@ -1,8 +1,8 @@
 # Práctica HTML Y CSS - Johanna Diaz
 
-# Portfolio Web Project
+# Proyecto de Portfolio Web
 
-Este proyecto consiste en la creación de un **portafolio web** como parte del curso **Full Stack Web Bootcamp**. El objetivo es desarrollar una página web personal utilizando **HTML5** y **CSS3**, cumpliendo con los principios de diseño responsive y sin el uso de JavaScript ni frameworks como Bootstrap.
+Este proyecto consiste en la creación de un **portafolio web** como parte del curso **Full Stack Web Developer**. El objetivo es desarrollar una página web personal utilizando **HTML5** y **CSS3**, cumpliendo con los principios de diseño responsive y sin el uso de JavaScript ni frameworks como Bootstrap.
 
 ## Descripción del Proyecto
 
